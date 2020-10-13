@@ -13,7 +13,7 @@ public class Vehicule {
         this.typeEnergie = typeEnergie;
     }
 
-    public String decrire() {
-        return this.marque + " " + this.couleur + " a " + this.nbrPlace + " places.";
-    }
+    public String decrire(){
+		return this.marque + " " + this.couleur + " a " + this.nbrPlace + " places."
+	}
 }

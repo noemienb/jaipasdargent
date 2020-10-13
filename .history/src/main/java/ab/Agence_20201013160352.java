@@ -22,12 +22,6 @@ public class Agence {
         this.stock.add(vehicule);
     }
 
-    public void afficherStock() {
-        for (Vehicule vehicule : stock) {
-            System.out.println(vehicule.decrire());
-        }
-    }
-
     public String decrire() {
         return "Agence: " + this.nom + ", située à " + this.ville;
     }

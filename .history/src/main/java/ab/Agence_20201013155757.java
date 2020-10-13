@@ -1,17 +1,16 @@
 package ab;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Agence {
     String nom;
     String ville;
-    ArrayList<Vehicule> stock;
+    HashMap<String, Vehicule> stock;
 
     public Agence(String nom, String ville) {
         this.nom = nom;
         this.ville = ville;
-        this.stock = new ArrayList<Vehicule>();
+
     }
 
     public void louer(Vehicule vehicule) {
@@ -19,13 +18,7 @@ public class Agence {
     }
 
     public void ajouterVoiture(Vehicule vehicule) {
-        this.stock.add(vehicule);
-    }
 
-    public void afficherStock() {
-        for (Vehicule vehicule : stock) {
-            System.out.println(vehicule.decrire());
-        }
     }
 
     public String decrire() {
